@@ -1,0 +1,38 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# IDE Settings
+.vscode/
+.idea/
+
+# Python Cache & Build Artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Application Specific / Data Files
+Audit.csv
+orphan_pages.csv
+review.csv
+input/
+*.xlsx
+*.pdf
