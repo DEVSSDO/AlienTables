@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alienextractor"
+version = "1.0.0"
+description = "A professional, rule-based PDF data extraction tool with interactive CLI."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "AlienExtractor Team"},
+]
+keywords = ["pdf", "extractor", "ocr", "data-extraction", "excel"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business",
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "PyMuPDF>=1.20.0",
+    "pandas>=1.3.0",
+    "openpyxl>=3.0.0",
+    "python-dateutil>=2.8.0",
+    "tqdm>=4.60.0",
+    "pdf2image>=1.16.0",
+    "Pillow>=9.0.0",
+    "pytesseract>=0.3.10",
+]
+
+[project.scripts]
+alienextractor = "alienextractor.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/alienextractor/alienextractor"
+Documentation = "https://github.com/alienextractor/alienextractor#readme"
+Issues = "https://github.com/alienextractor/alienextractor/issues"
+
+[tool.setuptools.packages.find]
+include = ["alienextractor*"]
