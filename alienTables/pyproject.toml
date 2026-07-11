@@ -3,8 +3,8 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "alienextractor"
-version = "1.0.0"
+name = "AlienTables"
+version = "2.0"
 description = "A professional, rule-based PDF data extraction tool with interactive CLI."
 readme = "README.md"
 license = {text = "MIT"}
